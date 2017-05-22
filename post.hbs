@@ -1,0 +1,50 @@
+{{!< default}}
+{{> header}}
+
+<main class="main_ynote" role="main">
+    {{#post}}
+        <article class="article_ynote" role="article" itemscope itemtype="http://schema.org/Article">
+            <header class="postheader_ynote">
+                <time class="date_ynote" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
+                <h1 class="posttitle_ynote" itemprop="headline">{{title}}</h1>
+            </header> <!-- end of postheader_ynote -->
+            <div class="postcontent_ynote" itemprop="articleBody">
+                {{content}}
+            </div>
+            {{#if tags}}
+                <div class="posttags_ynote">
+                    Tags: {{tags separator=" | "}}
+                </div>
+            {{/if}}
+            <div class="sharepost_ynote">
+                <h4 class="share_ynote">Share this post: &nbsp;</h4>
+                <a class="share_ynote icon-twitter" target="_blank" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"><span class="hidethis_ynote">Twitter</span></a>
+                <a class="share_ynote icon-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}"><span class="hidethis_ynote">Facebook</span></a>
+                <a class="share_ynote icon-gplus" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}"><span class="hidethis_ynote">Google+</span></a>
+            </div>
+            {{#if author}}
+                <footer class="postfooter_ynote">
+                    <address itemscope itemtype="http://schema.org/Person">
+                        {{#if author.image}}
+                            <div class="authorimage_ynote"><img src="{{author.image}}" itemprop="image" /></div>
+                        {{/if}}
+                        <h4 class="authorname_ynote"><span itemprop="author">{{author.name}}</span></h4>
+                        {{#if author.website}}
+                            <div class="authorwebsite_ynote"><a href="{{author.website}}" itemprop="url">{{author.website}}</a></div>
+                        {{/if}}
+                    </address>
+                    <div class="authorbio_ynote">
+                        <p>{{author.bio}}</p>
+                    </div>
+                </footer>
+            {{/if}}
+        </article> <!-- end of article_ynote -->
+    {{/post}}
+    {{#if pagination}}
+        <div class="pagination_ynote">
+            {{{pagination}}}
+        </div>
+    {{/if}}
+</main> <!-- end of main_ynote -->
+
+{{> footer}}

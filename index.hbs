@@ -1,0 +1,38 @@
+{{!< default}}
+{{> header}}
+
+<main class="main_ynote" role="main">
+
+{{#foreach posts}}
+
+<article class="article_ynote" role="article" itemscope itemtype="http://schema.org/Article">
+    <header class="postheader_ynote">
+        <time class="date_ynote" datetime="{{date format='dddd DD MMM YYYY'}}" itemprop="datePublished"></time>
+        <h1 class="posttitle_ynote" itemprop="headline">
+            <a href="{{{url}}}" rel="bookmark">{{title}}</a>
+        </h1> <!-- end of posttitle_ynote -->
+    </header> <!-- end of postheader_ynote -->
+
+    <div class="postcontent_ynote" itemprop="articleBody">
+        {{content}}
+    </div> <!-- end of postcontent_ynote -->
+
+    <div class="posttags_ynote">
+        {{#if tags}}
+            Tags: {{tags separator=" | "}}
+        {{/if}}
+    </div> <!-- end of posttags_yonte -->
+
+</article> <!-- end of article_ynote -->
+
+{{/foreach}}
+
+    <div class="pagination_ynote">
+        {{#if pagination}}
+            {{{pagination}}}
+        {{/if}}
+    </div> <!-- end of pagination_ynote -->
+
+</main> <!-- end of main_ynote -->
+
+{{> footer}}
