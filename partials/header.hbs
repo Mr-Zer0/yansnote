@@ -1,13 +1,20 @@
-<div role='banner' class="header_ynote">
-    {{#if @blog.logo}}<a class="logo_ynote" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
-    <h1 class="blogtitle_ynote">
-        <a title="{{@blog.title}}" href='{{@blog.url}}'>
-            {{{@blog.title}}}
-        </a>
-    </h1>
-    <p class="blogdescription_ynote">
-        <a title="{{@blog.title}}" href='{{@blog.url}}'>
-            {{@blog.description}}
-        </a>
-    </p>
-</div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+
+    <title>{{meta_title}}</title>
+    <meta name="description", content="{{meta_description}}">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato|Noto+Serif:400i" rel="stylesheet">
+    <link rel="stylesheet" href='http://mmwebfonts.comquas.com/fonts/?font=yunghkio' />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+
+    {{ghost_head}}
+
+</head>

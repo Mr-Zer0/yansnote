@@ -4,14 +4,19 @@
         max-width: 730px;
     }
     .blogtitle_ynote {
-        font-size: 5em;
+        font-size: 4.5em;
     }
     .blogdescription_ynote {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 }
 a:hover {
     text-decoration: none;
+}
+body {
+    font-family: 'Droid Sans', 'Yunghkio', Sans-Serif;
+    font-size: 16px;
+    color: #4d4d4d;
 }
 
 .header_ynote {
@@ -55,5 +60,13 @@ a:hover {
     color: #5f5f5f;
 }
 .navigation li a:hover {
+    color: #000000;
+}
+
+/* Post Archive */
+.posttitle_ynote a {
+    color: #4d4d4d;
+}
+.posttitle_ynote a:hover {
     color: #000000;
 }
