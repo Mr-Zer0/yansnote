@@ -1,10 +1,6 @@
-# Casper
+# Yan's Note
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/).
+# Yan's Note
+A ghost theme for my personal blog.
 
-To download, visit the [releases](https://github.com/TryGhost/Casper/releases) page.
-
-## Copyright & License
-
-Copyright (c) 2013-2017 Ghost Foundation - Released under the [MIT license](LICENSE).
-
+The theme is created based on the ghost's default theme called [Casper](https://github.com/TryGhost/Casper).
