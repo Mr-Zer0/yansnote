@@ -1,6 +1,6 @@
 <nav class="site-nav">
     <div class="site-nav-left">
-        {{^is "home"}}
+        {{!-- {{^is "home"}}
             {{#if @blog.logo}}
                 <a class="site-nav-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
             {{else}}
@@ -9,7 +9,13 @@
         {{/is}}
         {{#if @blog.navigation}}
             {{navigation}}
-        {{/if}}
+        {{/if}} --}}
+
+        <ul class="nav">
+            <li><a href="{{@blog.url}}"><i class="material-icons">face</i> Home</a></li>
+            <li><a href="{{@blog.url}}/tag/getting-started">Tags</a></li>
+            <li><a href="{{@blog.url}}/author/ghost">Me</a></li>
+        </ul>
     </div>
     <div class="site-nav-right">
         <div class="social-links">
@@ -18,6 +24,9 @@
             {{/if}}
             {{#if @blog.twitter}}
                 <a class="social-link social-link-tw" href="{{twitter_url @blog.twitter}}" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
+            {{/if}}
+            {{#if @blog.twitter}}
+                <a class="social-link social-link-tw" href="https://www.linkedin.com/in/yan-naing-4b0656a6/" target="_blank" rel="noopener">{{> "icons/linked"}}</a>
             {{/if}}
         </div>
         {{#if @labs.subscribers}}
