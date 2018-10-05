@@ -1,21 +1,17 @@
 <nav class="site-nav">
     <div class="site-nav-left">
-        {{!-- {{^is "home"}}
+        {{^is "home"}}
             {{#if @blog.logo}}
                 <a class="site-nav-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
             {{else}}
                 <a class="site-nav-logo" href="{{@blog.url}}">{{@blog.title}}</a>
             {{/if}}
         {{/is}}
+
         {{#if @blog.navigation}}
             {{navigation}}
-        {{/if}} --}}
-
-        <ul class="nav">
-            <li><a href="{{@blog.url}}"><i class="material-icons">face</i> Home</a></li>
-            <li><a href="{{@blog.url}}/tag/getting-started">Tags</a></li>
-            <li><a href="{{@blog.url}}/author/ghost">Me</a></li>
-        </ul>
+        {{/if}}
+        
     </div>
     <div class="site-nav-right">
         <div class="social-links">
