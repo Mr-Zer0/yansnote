@@ -168,7 +168,10 @@ body {
 
 .site-logo {
     max-height: 45px;
+<<<<<<< HEAD
     margin-right: 0.2em;
+=======
+>>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
 }
 
 .site-description {
@@ -412,10 +415,17 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .post-card-image {
+<<<<<<< HEAD
     width: auto;
     height: 200px;
     background: var(--lightgrey) no-repeat center center;
     background-size: cover;
+=======
+    width: 100%;
+    height: 200px;
+    background: var(--lightgrey) no-repeat center center;
+    object-fit: cover;
+>>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
 }
 
 .post-card-content-link {
@@ -453,7 +463,11 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .post-card-excerpt {
+<<<<<<< HEAD
     font-family: Georgia, Pyidaungsu, serif;
+=======
+    font-family: Georgia, serif;
+>>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
 }
 
 .post-card-meta {
@@ -596,28 +610,47 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 /* Special Styling for home page grid (below):
 
+<<<<<<< HEAD
 The first (most recent) post in the list is styled to be bigger than the others and take over the full width of the grid to give it more emphasis. Wrapped in a media query to make sure this only happens on large viewports / desktop-ish devices.
+=======
+The first post in the list is styled to be bigger than the others and take over
+the full width of the grid to give it more emphasis. Wrapped in a media query to
+make sure this only happens on large viewports / desktop-ish devices.
+>>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
 
  */
 
 @media (min-width: 795px) {
+<<<<<<< HEAD
     .home-template .post-feed .post-card:nth-child(6n+1):not(.no-image) {
+=======
+    .post-card-large {
+>>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
         flex: 1 1 100%;
         flex-direction: row;
     }
 
+<<<<<<< HEAD
     .home-template .post-feed .post-card:nth-child(6n+1):not(.no-image) .post-card-image-link {
+=======
+    .post-card-large .post-card-image-link {
+>>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
         position: relative;
         flex: 1 1 auto;
         border-radius: 5px 0 0 5px;
     }
 
+<<<<<<< HEAD
     .home-template .post-feed .post-card:nth-child(6n+1):not(.no-image) .post-card-image {
+=======
+    .post-card-large .post-card-image {
+>>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
         position: absolute;
         width: 100%;
         height: 100%;
     }
 
+<<<<<<< HEAD
     .home-template .post-feed .post-card:nth-child(6n+1):not(.no-image) .post-card-content {
         flex: 0 1 357px;
     }
@@ -627,15 +660,34 @@ The first (most recent) post in the list is styled to be bigger than the others 
     }
 
     .home-template .post-feed .post-card:nth-child(6n+1):not(.no-image) p {
+=======
+    .post-card-large .post-card-content {
+        flex: 0 1 357px;
+    }
+
+    .post-card-large h2 {
+        font-size: 2.6rem;
+    }
+
+    .post-card-large p {
+>>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
         font-size: 1.8rem;
         line-height: 1.55em;
     }
 
+<<<<<<< HEAD
     .home-template .post-feed .post-card:nth-child(6n+1):not(.no-image) .post-card-content-link {
         padding: 30px 40px 0;
     }
 
     .home-template .post-feed .post-card:nth-child(6n+1):not(.no-image) .post-card-meta {
+=======
+    .post-card-large .post-card-content-link {
+        padding: 30px 40px 0;
+    }
+
+    .post-card-large .post-card-meta {
+>>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
         padding: 0 40px 30px;
     }
 }
@@ -710,15 +762,28 @@ The first (most recent) post in the list is styled to be bigger than the others 
 
 .post-full-image {
     margin: 0 -10vw -165px;
+<<<<<<< HEAD
     height: 800px;
     background: var(--lightgrey) center center;
     background-size: cover;
     border-radius: 5px;
+=======
+    background: var(--lightgrey) center center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.post-full-image img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+>>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
 }
 
 @media (max-width: 1170px) {
     .post-full-image {
         margin: 0 -4vw -100px;
+<<<<<<< HEAD
         height: 600px;
         border-radius: 0;
     }
@@ -726,6 +791,17 @@ The first (most recent) post in the list is styled to be bigger than the others 
 
 @media (max-width: 800px) {
     .post-full-image {
+=======
+        border-radius: 0;
+    }
+    .post-full-image img {
+        height: 600px;
+    }
+}
+
+@media (max-width: 800px) {
+    .post-full-image img {
+>>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
         height: 400px;
     }
 }
@@ -735,8 +811,13 @@ The first (most recent) post in the list is styled to be bigger than the others 
     margin: 0 auto;
     padding: 70px 100px 0;
     min-height: 230px;
+<<<<<<< HEAD
     font-family: Georgia, Pyidaungsu, serif;
     font-size: 1.8rem;
+=======
+    font-family: Georgia, serif;
+    font-size: 2.2rem;
+>>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
     line-height: 1.6em;
     background: #fff;
 }
@@ -916,6 +997,13 @@ Usage (In Ghost editor):
     border-radius: 3px;
 }
 
+<<<<<<< HEAD
+=======
+.post-full-content p code {
+    word-break: break-all;
+}
+
+>>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
 .post-full-content pre {
     overflow-x: auto;
     margin: 1.5em 0 3em;
@@ -936,7 +1024,11 @@ Usage (In Ghost editor):
     background: transparent;
 }
 
+<<<<<<< HEAD
 .post-full-content pre code * {
+=======
+.post-full-content pre code :not(span) {
+>>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
     color: inherit;
 }
 
@@ -969,7 +1061,11 @@ Usage (In Ghost editor):
 .post-full-content h5,
 .post-full-content h6 {
     color: color(var(--darkgrey) l(-5%));
+<<<<<<< HEAD
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", Pyidaungsu, sans-serif;
+=======
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+>>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
 }
 
 .post-full-content h1 {
@@ -1022,7 +1118,11 @@ Usage (In Ghost editor):
     padding: 1em 0 1.5em;
     border: 0;
     color: var(--blue);
+<<<<<<< HEAD
     font-family: Georgia, Pyidaungsu, serif;
+=======
+    font-family: Georgia,serif;
+>>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
     font-size: 3.2rem;
     line-height: 1.35em;
     text-align: center;
@@ -1102,7 +1202,11 @@ Usage (In Ghost editor):
     width: auto;
     border-spacing: 0;
     border-collapse: collapse;
+<<<<<<< HEAD
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", Pyidaungsu, sans-serif;
+=======
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+>>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
     font-size: 1.6rem;
     white-space: nowrap;
     vertical-align: top;
@@ -1831,7 +1935,11 @@ Usage (In Ghost editor):
 }
 
 .post-template .post-content > p:first-child {
+<<<<<<< HEAD
     font-size: 1.15em;
+=======
+    font-size: 1.25em;
+>>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
     line-height: 1.5em;
 }
 

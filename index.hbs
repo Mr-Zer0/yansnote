@@ -2,13 +2,21 @@
 {{!-- The tag above means: insert everything in this file
 into the {body} of the default.hbs template --}}
 
+<<<<<<< HEAD
 {{!-- The big featured header, it uses blog cover image as a BG if available --}}
 <header class="site-header outer {{#if @blog.cover_image}}" style="background-image: url({{@blog.cover_image}}){{else}}no-cover{{/if}}">
+=======
+{{> header background=@blog.cover_image}} {{!--Special header.hbs partial to generate the <header> tag--}}
+>>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
     <div class="inner">
         <div class="site-header-content">
             <h1 class="site-title">
                 {{#if @blog.logo}}
+<<<<<<< HEAD
                     <img class="site-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />{{@blog.title}}
+=======
+                    <img class="site-logo" src="{{img_url @blog.logo size="s"}}" alt="{{@blog.title}}" />
+>>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
                 {{else}}
                     {{@blog.title}}
                 {{/if}}

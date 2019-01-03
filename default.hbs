@@ -11,9 +11,12 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+<<<<<<< HEAD
     {{!-- Fonts --}}
     <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=pyidaungsu' />
 
+=======
+>>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
     {{!-- Styles'n'Scripts --}}
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
 
@@ -76,6 +79,7 @@
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous">
     </script>
+<<<<<<< HEAD
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
 
     {{#if pagination.pages}}
@@ -86,6 +90,12 @@
         var maxPages = parseInt('{{pagination.pages}}');
     </script>
     <script src="{{asset "js/infinitescroll.js"}}"></script>
+=======
+    <script type="text/javascript" src="{{asset "built/jquery.fitvids.js"}}"></script>
+
+    {{#if pagination.pages}}
+    <script src="{{asset "built/infinitescroll.js"}}"></script>
+>>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
     {{/if}}
 
     {{!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. --}}
