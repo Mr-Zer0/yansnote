@@ -7,45 +7,25 @@
                 <a class="site-nav-logo" href="{{@blog.url}}">{{@blog.title}}</a>
             {{/if}}
         {{/is}}
-<<<<<<< HEAD
 
         {{#if @blog.navigation}}
             {{navigation}}
         {{/if}}
 
-=======
-        {{#if @blog.navigation}}
-            {{navigation}}
-        {{/if}}
->>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
     </div>
     <div class="site-nav-right">
         <div class="social-links">
             {{#if @blog.facebook}}
-<<<<<<< HEAD
-                <a class="social-link social-link-fb" href="{{facebook_url @blog.facebook}}" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
-            {{/if}}
-            {{#if @blog.twitter}}
-                <a class="social-link social-link-tw" href="{{twitter_url @blog.twitter}}" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
-            {{/if}}
-            {{#if @blog.twitter}}
-                <a class="social-link social-link-tw" href="https://www.linkedin.com/in/yan-naing-4b0656a6/" target="_blank" rel="noopener">{{> "icons/linked"}}</a>
-=======
                 <a class="social-link social-link-fb" href="{{facebook_url @blog.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
             {{/if}}
             {{#if @blog.twitter}}
                 <a class="social-link social-link-tw" href="{{twitter_url @blog.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
->>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
             {{/if}}
         </div>
         {{#if @labs.subscribers}}
             <a class="subscribe-button" href="#subscribe">Subscribe</a>
         {{else}}
-<<<<<<< HEAD
-            <a class="rss-button" href="https://feedly.com/i/subscription/feed/{{@blog.url}}/rss/" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
-=======
             <a class="rss-button" href="https://feedly.com/i/subscription/feed/{{@blog.url}}/rss/" title="RSS" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
->>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
         {{/if}}
     </div>
 </nav>

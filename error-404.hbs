@@ -20,11 +20,7 @@ It's a good idea to keep this template as minimal as possible in terms of both f
             <div class="inner">
                 <nav class="site-nav-center">
                     {{#if @blog.logo}}
-<<<<<<< HEAD
-                        <a class="site-nav-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
-=======
                         <a class="site-nav-logo" href="{{@blog.url}}"><img src="{{img_url @blog.logo size="xs"}}" alt="{{@blog.title}}" /></a>
->>>>>>> 3388283f02d99bf29a6a691a6c771960b884a901
                     {{else}}
                         <a class="site-nav-logo" href="{{@blog.url}}">{{@blog.title}}</a>
                     {{/if}}
